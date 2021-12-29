@@ -1,0 +1,10 @@
+<form [formGroup]=RegisterForm>
+    <label for="FullName">FullName</label>
+    <input type="text" id="FullName" formControlName="FullName">
+    <label for="EmailId">EmailId</label>
+    <input type="text" id="EmailId" formControlName="EmailId">
+    <label for="PassWord">PassWord</label>
+    <input type="text" id="PassWord" formControlName="PassWord">
+    <button type="button" (click)="SignUp()">Register</button>
+</form>
+<a routerLink="/Login">Login YourSelf</a>

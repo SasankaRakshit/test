@@ -1,0 +1,44 @@
+<div>
+    <app-header></app-header>
+   
+    
+    <table>
+        <thead>
+            <tr>
+                <th>FullName</th>
+                <th>EmailId</th>
+                <th>MobileNumber</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+       <tbody>
+           <tr *ngFor="let item of data">
+               <td>{{item.FullName}}</td>
+               <td>{{item.EmailId}}</td>
+               <td>{{item.MobileNumber}}</td>
+               <td>
+                   <button type="button" (click)="deleteData(item)">Delete</button>
+               </td>
+           </tr>
+
+       </tbody>
+    </table>
+</div>
+<div>
+    <form [formGroup]="dashBoardForm">
+        <label for="FullName">FullName</label>
+        <input type="text" id="FullName" formControlName="FullName">
+        <label for="EmailId">EmailId</label>
+        <input type="text" id="EmailId" formControlName="EmailId">
+        <label for="MobileNumber">MobileNumber</label>
+        <input type="text" id="MobileNumber" formControlName="MobileNumber">
+        <label for="PassWord">PassWord</label>
+        <input type="text" id="PassWord" formControlName="PassWord">
+    </form>
+    
+    <button type="button" (click)="postData()">Add</button>
+</div>
+   
+
+  
+ 
