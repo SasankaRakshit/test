@@ -28,9 +28,11 @@ LoginForm !:FormGroup;
      if(User){
        this._router.navigate(['DashBoard'])
        localStorage.setItem("token",User.FullName);
+      // return true;
      }
      else{
        alert("User Not Found");
+      // return false;
      }
    })
  }

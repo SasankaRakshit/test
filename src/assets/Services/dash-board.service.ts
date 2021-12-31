@@ -17,6 +17,6 @@ updateData(data:any,id:number){
   return this._http.put<any>("http://localhost:3000/posts"+id,data)
 }
 deleteData(id:number){
-  return this._http.delete<any>("http://localhost:3000/posts"+id)
+  return this._http.delete<any>("http://localhost:3000/posts/"+id)
 }
 }

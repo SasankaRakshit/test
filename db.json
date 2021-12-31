@@ -1,13 +1,23 @@
 {
   "posts": [
     {
-      "FullName": "Sourav",
-      "EmailId": "sg",
-      "MobileNumber": "1213",
-      "id": 3
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "FullName": "mvc",
+      "EmailId": "mvc",
+      "MobileNumber": "4656",
+      "id": 2
     }
   ],
   "RegisteredUser": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    },
     {
       "FullName": "abc",
       "EmailId": "def",
@@ -25,18 +35,6 @@
       "EmailId": "abc",
       "PassWord": "5678",
       "id": 4
-    },
-    {
-      "FullName": "Virat",
-      "EmailId": "vk",
-      "PassWord": "111",
-      "id": 5
-    },
-    {
-      "FullName": "Virat",
-      "EmailId": "xyz",
-      "PassWord": "789",
-      "id": 6
     }
   ],
   "profile": {

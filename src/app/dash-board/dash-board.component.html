@@ -17,7 +17,9 @@
                <td>{{item.EmailId}}</td>
                <td>{{item.MobileNumber}}</td>
                <td>
-                   <button type="button" (click)="deleteData(item)">Delete</button>
+                   <button type="button" (click)="deleteData(item.id)">Delete</button>
+                   <button type="button" routerLink="/Edit/{{item.id}}">Edit</button>
+                  
                </td>
            </tr>
 

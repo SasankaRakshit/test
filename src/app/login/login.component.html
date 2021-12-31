@@ -1,8 +1,10 @@
 <form [formGroup]=LoginForm>
-    <label for="EmailId">EmailId</label>
-        <input type="text" id="EmailId" formControlName="EmailId">
-        <label for="PassWord">PassWord</label>
-        <input type="text" id="PassWord" formControlName="PassWord">
+    <a routerLink="/Register">Register YourSelf</a>
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="text" class="form-control" id="EmailId" formControlName="EmailId" aria-describedby="emailHelp">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="text"  class="form-control" id="PassWord" formControlName="PassWord" aria-describedby="emailHelp">
         <button type="button" (click)="LogIn()">LogIn</button>
 </form>
-<a routerLink="/Register">Register YourSelf</a>
+
+
